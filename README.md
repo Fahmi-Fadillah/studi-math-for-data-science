@@ -5,8 +5,8 @@
 
 ## 📋 Profil Proyek
 * **Username Dicoding:** fahmi fadillah30
-* **Waktu Pengerjaan:** April 2026
-* **Tugas Akhir:** Belajara Matematika Untuk Data Science
+* **Bulan & Waktu Pengerjaan:** April 2026 & 7 Jam
+* **Tugas Akhir:** Belajar Matematika Untuk Data Science
 
 ---
 
