@@ -1,79 +1,63 @@
-# Proyek Akhir: Belajar Matematika untuk Data Science
+# Proyek Akhir: Matematika untuk Data Science
 
-## Proyek Studi Math For Data Science
-Username Dicoding : fahmi fadillah30
-April 2026
+[![Dicoding Submission](https://img.shields.io/badge/Dicoding-Submission-blue)](https://www.dicoding.com/)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-green)](https://www.python.org/)
 
-Proyek ini dibuat untuk memenuhi submission **Dicoding: Matematika untuk Data Science**. Proyek ini berfokus pada penerapan prinsip-prinsip **Probabilitas dan Statistika** dalam penyelesaian masalah Data Science, mencakup distribusi probabilitas, algoritma Naive Bayes, dan A/B Testing.
-
----
-
-## 📊 Soal dan Studi Kasus
-
-Proyek ini terdiri dari tiga bagian utama yang masing-masing menyelesaikan permasalahan spesifik menggunakan pendekatan statistik.
-
-### 1. Distribusi Probabilitas & Algoritma Naive Bayes
-**File**: `soal_1_distribusi_dan_algoritma_naive_bayes.py`
-
-* **Deskripsi**: Membangun model klasifikasi Naive Bayes dari nol (scratch) untuk memprediksi jenis burung.
-* **Fitur Utama**:
-  * **Generasi Data Sintetis**: Membuat data dummy yang mengikuti distribusi tertentu (Gaussian, Binomial, Uniform).
-  * **Implementasi Distribusi**:
-    * Gaussian: Berat badan (`weight_g`), Rentang sayap (`wingspan_cm`)
-    * Binomial: Hari berkicau (`sing_days`)
-    * Uniform: Rasio paruh-kepala (`beak_head_ratio`)
-  * **Klasifikasi Naive Bayes**: Menghitung *Posterior Probability* menggunakan *Prior* dan *Likelihood* dari distribusi yang sesuai.
-
-### 2. A/B Testing: Sistem Rekomendasi
-**File**: `soal_2_sistem_rekomendasi_ab.py`
-
-* **Deskripsi**: Mengevaluasi efektivitas fitur rekomendasi artikel baru terhadap jumlah artikel yang dibaca pengguna.
-* **Metode**:
-  * Menggunakan **Two-Sample t-test** (Welch's t-test).
-  * Data dimodelkan menggunakan distribusi Poisson.
-  * Menghitung t-statistic, degree of freedom (Satterthwaite), dan p-value untuk pengambilan keputusan.
-
-### 3. A/B Testing: Software Development
-**File**: `soal_3_software_dev_ab.py`
-
-* **Deskripsi**: Menentukan apakah fitur baru dalam aplikasi berhasil meningkatkan *retention rate* (conversion rate).
-* **Metode**:
-  * **Power Analysis**: Menghitung ukuran sampel minimum (`sample_size`) yang dibutuhkan untuk mendeteksi dampak fitur.
-  * **Z-test untuk Dua Proporsi**: Menguji perbedaan proporsi keberhasilan (konversi) antara kelompok kontrol dan varian.
-  * Menghitung durasi eksperimen yang dibutuhkan berdasarkan traffic harian.
+## 📋 Profil Proyek
+* **Username Dicoding:** fahmi fadillah30
+* **Waktu Pengerjaan:** April 2026
+* **Tugas Akhir:** Belajara Matematika Untuk Data Science
 
 ---
 
-## ⚙️ Tahapan & Implementasi
+## 📌 Deskripsi
+Proyek ini merupakan implementasi mendalam dari prinsip-prinsip matematika yang menjadi fondasi algoritma Machine Learning dan analisis data. Fokus utama terletak pada pembangunan model klasifikasi secara manual (*from scratch*) dan validasi fitur melalui eksperimen A/B Testing yang ketat.
 
-1.  **Analisis & Pemodelan Data** 🔬
-    *   Mengidentifikasi jenis distribusi data (Diskrit/Kontinu).
-    *   Estimasi parameter distribusi ($\mu, \sigma, p$, dll) dari data training.
+## 📊 Studi Kasus dan Implementasi
 
-2.  **Uji Hipotesis** 🧪
-    *   Merumuskan Hipotesis Nol ($H_0$) dan Alternatif ($H_1$).
-    *   Menghitung statistik uji (t-score, z-score).
-    *   Mengambil keputusan berdasarkan *p-value* dan tingkat signifikansi ($\alpha$).
+### 1. Klasifikasi Spesies Burung (Naive Bayes From Scratch)
+Membangun model prediksi jenis burung berdasarkan fitur morfologi dengan menerapkan **Teorema Bayes**. Proyek ini menekankan pada pemilihan distribusi yang tepat untuk setiap jenis fitur:
 
-3.  **Evaluasi Model** 📈
-    *   Mengukur akurasi prediksi model Naive Bayes.
-    *   Menentukan signifikansi statistik dari hasil eksperimen A/B testing.
+* **Gaussian Distribution**: Digunakan untuk variabel kontinu seperti berat badan (`weight_g`) dan rentang sayap (`wingspan_cm`).
+* **Binomial Distribution**: Digunakan untuk variabel diskrit berupa frekuensi kejadian, yaitu hari berkicau (`sing_days`).
+* **Uniform Distribution**: Digunakan untuk rasio fisik tertentu seperti paruh-kepala (`beak_head_ratio`).
+
+
+
+### 2. A/B Testing: Optimalisasi Sistem Rekomendasi
+Menganalisis efektivitas algoritma rekomendasi artikel terhadap keterlibatan (*engagement*) pengguna.
+* **Metodologi**: Menggunakan **Welch's t-test** untuk menangani dua populasi dengan varians yang berbeda (*unequal variance*).
+* **Pemodelan**: Data frekuensi bacaan dimodelkan dengan **Distribusi Poisson**.
+* **Parameter**: Menghitung *t-statistic*, *degrees of freedom* (Satterthwaite approximation), dan *p-value*.
+
+
+
+### 3. A/B Testing: Retensi Pengguna pada Software Dev
+Validasi fitur baru untuk meningkatkan *conversion rate* menggunakan statistik inferensial.
+* **Power Analysis**: Menentukan ukuran sampel minimum untuk menghindari kesalahan Tipe II ($\beta$).
+* **Uji Hipotesis**: Implementasi **Z-test untuk Dua Proporsi** guna membandingkan tingkat retensi antara kelompok kontrol dan varian.
+* **Eksperimen**: Estimasi durasi pengujian berdasarkan trafik harian untuk efisiensi bisnis.
+
+
 
 ---
+
+## ⚙️ Tahapan Eksekusi
+1.  **Analisis Distribusi**: Mengidentifikasi jenis data (diskrit vs kontinu) dan mengestimasi parameter ($\mu, \sigma, \lambda$).
+2.  **Uji Hipotesis**: Merumuskan $H_0$ (Hipotesis Nol) dan $H_1$ (Hipotesis Alternatif) dengan tingkat signifikansi $\alpha = 0.05$.
+3.  **Evaluasi**: Menghitung skor akurasi untuk model klasifikasi dan menentukan signifikansi statistik untuk hasil A/B Test.
 
 ## 📦 Requirements
-
-Proyek ini dikembangkan menggunakan Python dengan library berikut:
-*   `numpy`: Komputasi numerik & array.
-*   `pandas`: Manipulasi & analisis data tabular.
-*   `matplotlib` & `seaborn`: Visualisasi data.
-*   `scipy`: Fungsi-fungsi statistik ilmiah (stats, special).
-*   `sklearn` (Scikit-learn): Metrik evaluasi model.
+Proyek ini dikembangkan menggunakan stack berikut:
+* `numpy` & `pandas`: Manipulasi data dan komputasi array.
+* `scipy.stats`: Perhitungan distribusi probabilitas dan uji statistik.
+* `matplotlib` & `seaborn`: Visualisasi distribusi data.
+* `sklearn.metrics`: Evaluasi performa model.
 
 ---
 
 ## ✨ Penutup
+Proyek ini menunjukkan bahwa penguasaan matematika dasar sangat krusial dalam memahami bagaimana sebuah model bekerja di balik layar, serta memastikan kesimpulan yang diambil dari sebuah data bersifat valid dan dapat dipertanggungjawabkan secara ilmiah.
 
-Submission ini mendemonstrasikan kemampuan fundamental dalam menerapkan matematika—khususnya probabilitas dan statistika—sebagai fondasi utama algoritma Machine Learning dan pengambilan keputusan berbasis data (Data-Driven Decision Making).
-
-Semoga bermanfaat! 🙌
+---
+© 2026 fahmi fadillah30. All Rights Reserved.
