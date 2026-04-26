@@ -57,7 +57,7 @@ Proyek ini dikembangkan menggunakan stack berikut:
 ---
 
 ## ✨ Penutup
-Proyek ini menunjukkan bahwa penguasaan matematika dasar sangat krusial dalam memahami bagaimana sebuah model bekerja di balik layar, serta memastikan kesimpulan yang diambil dari sebuah data bersifat valid dan dapat dipertanggungjawabkan secara ilmiah.
+Proyek ini menunjukkan bahwa penguasaan matematika dasar sangat krusial dalam memahami bagaimana sebuah model bekerja di balik layar, serta memastikan kesimpulan yang diambil dari sebuah data bersifat valid dan dapat dipertanggungjawabkan.
 
 ---
 © 2026 fahmi fadillah30. All Rights Reserved.
